@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    
+}
+
+
+body{
+    background-color: #FAF9F6;
+}
+main{
+    display: flex;
+    margin-top: 10px;
+    justify-content:space-evenly;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
+    color:white;
+    gap: 15px;
+    overflow: auto;
+    
+}
+
+.logo{
+    display: flex;
+    background-image: url(logo.png.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.search{
+    display: flex;
+    width: 300px;
+    background-color: #edf3f8;
+    padding-right: 200px;
+    border-radius: 9px;
+}
+
+.search input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 15px;
+    
+}
+.search i{
+    padding: 10px;
+    color:black ;
+    background-color: #edf3f8;
+    border: none;
+    border: radius 15px;;
+    
+}
+.icons{
+    margin-left: 50px;
+    color:#00000099;
+    font-size: 1.0rem;
+    justify-content: space-between;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    gap: 1.5rem;
+
+
+}
+.icons :hover{
+color: black;
+}
+.icons i{
+    font-size: 2.0rem;
+    justify-content: space-between;
+
+    
+}
+.profile{
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    gap: 1.4rem;
+    width: 85%;
+    margin: 1.8rem auto;
+}
+.sidebar{
+    outline: 1px solid #888585c8;
+    background-color: #fff;
+    width: 100%;
+    height: 52vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+}
+.sidebar .top{
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(82, 92,105);
+    position: absolute;
+
+
+}
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 3%;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid #fff;
+
+
+}
+.profile1{
+    position: relative;
+    text-align: center;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom:1px solid rgb(185,185,185) ;
+    height: 10vh;
+
+}
+.profile1 a{
+    text-decoration: none;
+    color: #000;
+    ;
+
+}
+.profile1 a :hover{
+    text-decoration: underline;
+}
+
+.profile1 small{
+    font-size: 0.7rem;
+    color: gray;
+
+}
+.view{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 1rem;
+    top: 6%;
+    border-bottom:1px solid rgb(209, 209,209);
+    height: 10vh;
+}
+
+
+.invite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem ;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-weight: 100;
+
+}
+.invite :hover {
+background-color: rgb(209, 209,209);
+}
+.invite h6{
+    color: grey;
+    font-weight: 100;
+}
+.invite a{
+    color: rgba(0, 0, 255, 0.382);
+    text-decoration: none;
+    font-size: 0.8rem;
+
+}
+.premium{
+    position: relative;
+    top:7%;
+    border-bottom:1px solid rgb(209, 209,209);
+    height: 7vh;
+
+}
+.premium h6{
+    color: grey;
+    font-weight: 100;
+    margin-left: 0.2rem;
+
+
+}
+.premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: #000;
+}
+.items{
+    position: relative;
+    top:10%;
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    color: grey;
+    cursor: pointer;
+
+}
+.list{
+    outline: 1px solid #888585c8;
+    background-color: #fff;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    top:2%;
+    border-bottom:1px solid rgb(209, 209,209);
+    
+    
+}
+.group{
+    margin-top: 0.2rem;
+    margin-left: 0.8rem;
+    position: relative;
+    top: 5%;
+    
+}
+.group a{
+    text-decoration: none;
+    color: blue;
+}
+.group i{
+    margin-left: 100px;
+    cursor: pointer;
+}
+.discover{
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+    border-top: 1px solid rgb(144,144,144) ;
+    padding-top: 1rem;
+    
+}
+.discover a{
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+/* main sec*/
+main{
+    background-color: #fff;
+    border-radius: 0.8rem;
+    height: 18vh;
+   
+}
+
+.post {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.post img{
+    width:3.2rem;
+    height: 3.2rem;
+    border-radius:50%;
+    cursor: pointer;
+
+}
+.post input{
+    border-radius: 5rem;
+    border: 1px solid gray;
+    width: 500px;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.post input:hover{
+    background-color: rgba(178, 176, 176, 0.855);
+    cursor: pointer;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+.images{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    opacity:0.7;
+
+
+}
+.images:hover{
+    background-color: rgba(178, 176, 176, 0.855);
+    cursor: pointer;
+ 
+}
+.images h5{
+    font-weight: 400;
+
+}
+/**.posting{
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    columns: #626262;
+    margin:20px;
+    
+}**/
+.posting{
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 6px;
+    
+}
+.userprofile {
+    display: flex;
+    align-items:center;
+    margin-left: 10px;
+}
+
+.userprofile img{
+   
+    margin-right: 20px;
+    width:3.2rem;
+    height: 3.2rem;
+    border-radius:50%;
+    cursor: pointer;
+
+}
+.userprofile p{
+    margin-bottom:-5px;
+    font-weight: 500;
+    color: #626262;
+    
+}
+.userprofile small{
+    font-size: 12px;
+}
+.userprofile span{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+.post-text span{
+    color: black;
+    font-weight:bold;
+
+}
+.post-text  a{
+    color: #1876f2;
+    text-decoration: none;
+}
+.post-img{
+    width: 90%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    
+}
+.post-text{
+    margin-left: 10px;
+}
+
+
+
+
+/* right side*/
+.right_side{
+    background-color: #fff;
+    border-radius: 0.8rem;
+    height: 20vh;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 1rem;
+}
+.new h4{
+    font-weight: 400;
+}
+
+
+
+
+
+
+
